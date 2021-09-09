@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3310D0FB2ED86845447E3B54 /* Pods_DialaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327678FE5F89779D1C4F497 /* Pods_DialaTaskTests.framework */; };
+		3B4B6878938CC8EB0CE51FA7 /* Pods_DialaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657B0AC9A995876FB5C0074D /* Pods_DialaTask.framework */; };
 		BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EC926EAB49000C2342A /* AppDelegate.swift */; };
-		BD794ECC26EAB49000C2342A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794ECB26EAB49000C2342A /* SceneDelegate.swift */; };
-		BD794ECE26EAB49000C2342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794ECD26EAB49000C2342A /* ViewController.swift */; };
+		BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794ECD26EAB49000C2342A /* LoginViewController.swift */; };
 		BD794ED126EAB49000C2342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD794ECF26EAB49000C2342A /* Main.storyboard */; };
 		BD794ED326EAB49300C2342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD794ED226EAB49300C2342A /* Assets.xcassets */; };
 		BD794ED626EAB49300C2342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD794ED426EAB49300C2342A /* LaunchScreen.storyboard */; };
 		BD794EE126EAB49300C2342A /* DialaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EE026EAB49300C2342A /* DialaTaskTests.swift */; };
 		BD794EEC26EAB49300C2342A /* DialaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EEB26EAB49300C2342A /* DialaTaskUITests.swift */; };
+		BD794EFA26EAB9F200C2342A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EF926EAB9F200C2342A /* RegisterViewController.swift */; };
+		BD794EFC26EABBED00C2342A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EFB26EABBED00C2342A /* HomeViewController.swift */; };
+		BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */; };
+		DCE629BAC31CE761D670A8A3 /* Pods_DialaTask_DialaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FD58F6F65E8283B11CA475A /* Pods-DialaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.release.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.release.xcconfig"; sourceTree = "<group>"; };
+		5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask-DialaTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		657B0AC9A995876FB5C0074D /* Pods_DialaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327678FE5F89779D1C4F497 /* Pods_DialaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD794EC626EAB49000C2342A /* DialaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD794EC926EAB49000C2342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD794ECB26EAB49000C2342A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD794ECD26EAB49000C2342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD794ECD26EAB49000C2342A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD794ED026EAB49000C2342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD794ED226EAB49300C2342A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD794ED526EAB49300C2342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		BD794EE726EAB49300C2342A /* DialaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD794EEB26EAB49300C2342A /* DialaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialaTaskUITests.swift; sourceTree = "<group>"; };
 		BD794EED26EAB49300C2342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD794EF926EAB9F200C2342A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BD794EFB26EABBED00C2342A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask_DialaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask-DialaTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4B6878938CC8EB0CE51FA7 /* Pods_DialaTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3310D0FB2ED86845447E3B54 /* Pods_DialaTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE629BAC31CE761D670A8A3 /* Pods_DialaTask_DialaTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				BD794EDF26EAB49300C2342A /* DialaTaskTests */,
 				BD794EEA26EAB49300C2342A /* DialaTaskUITests */,
 				BD794EC726EAB49000C2342A /* Products */,
+				FD5740C592F0353486D08B0D /* Pods */,
+				D91D5449226F95CEEAFD1CE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				BD794EC926EAB49000C2342A /* AppDelegate.swift */,
-				BD794ECB26EAB49000C2342A /* SceneDelegate.swift */,
-				BD794ECD26EAB49000C2342A /* ViewController.swift */,
+				BD794F0126EABD4000C2342A /* Login */,
+				BD794F0026EABD3500C2342A /* Register */,
+				BD794F0226EABD4700C2342A /* Home */,
+				BD794EFF26EABD2B00C2342A /* ImageDetail */,
 				BD794ECF26EAB49000C2342A /* Main.storyboard */,
 				BD794ED226EAB49300C2342A /* Assets.xcassets */,
 				BD794ED426EAB49300C2342A /* LaunchScreen.storyboard */,
@@ -128,6 +151,61 @@
 			path = DialaTaskUITests;
 			sourceTree = "<group>";
 		};
+		BD794EFF26EABD2B00C2342A /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		BD794F0026EABD3500C2342A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				BD794EF926EAB9F200C2342A /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		BD794F0126EABD4000C2342A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD794ECD26EAB49000C2342A /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BD794F0226EABD4700C2342A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BD794EFB26EABBED00C2342A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D91D5449226F95CEEAFD1CE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				657B0AC9A995876FB5C0074D /* Pods_DialaTask.framework */,
+				CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */,
+				9327678FE5F89779D1C4F497 /* Pods_DialaTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5740C592F0353486D08B0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */,
+				3FD58F6F65E8283B11CA475A /* Pods-DialaTask.release.xcconfig */,
+				FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */,
+				5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */,
+				F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */,
+				27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD794EF026EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTask" */;
 			buildPhases = (
+				65405F72C330BD2CB98890FC /* [CP] Check Pods Manifest.lock */,
 				BD794EC226EAB49000C2342A /* Sources */,
 				BD794EC326EAB49000C2342A /* Frameworks */,
 				BD794EC426EAB49000C2342A /* Resources */,
+				5173DDFBA40F75D1F9ADAD6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD794EF326EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskTests" */;
 			buildPhases = (
+				A671C86607E1B25F4016B433 /* [CP] Check Pods Manifest.lock */,
 				BD794ED826EAB49300C2342A /* Sources */,
 				BD794ED926EAB49300C2342A /* Frameworks */,
 				BD794EDA26EAB49300C2342A /* Resources */,
@@ -170,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD794EF626EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskUITests" */;
 			buildPhases = (
+				40580474F69ABDE3B4E65D7D /* [CP] Check Pods Manifest.lock */,
 				BD794EE326EAB49300C2342A /* Sources */,
 				BD794EE426EAB49300C2342A /* Frameworks */,
 				BD794EE526EAB49300C2342A /* Resources */,
+				A8B2E0F8619285E69838384A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +336,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40580474F69ABDE3B4E65D7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DialaTask-DialaTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5173DDFBA40F75D1F9ADAD6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DialaTask/Pods-DialaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DialaTask/Pods-DialaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DialaTask/Pods-DialaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65405F72C330BD2CB98890FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DialaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A671C86607E1B25F4016B433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DialaTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B2E0F8619285E69838384A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD794EC226EAB49000C2342A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD794ECE26EAB49000C2342A /* ViewController.swift in Sources */,
+				BD794EFC26EABBED00C2342A /* HomeViewController.swift in Sources */,
+				BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */,
+				BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */,
 				BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */,
-				BD794ECC26EAB49000C2342A /* SceneDelegate.swift in Sources */,
+				BD794EFA26EAB9F200C2342A /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +621,7 @@
 		};
 		BD794EF126EAB49300C2342A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +640,7 @@
 		};
 		BD794EF226EAB49300C2342A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD58F6F65E8283B11CA475A /* Pods-DialaTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +659,7 @@
 		};
 		BD794EF426EAB49300C2342A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +681,7 @@
 		};
 		BD794EF526EAB49300C2342A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +703,7 @@
 		};
 		BD794EF726EAB49300C2342A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +723,7 @@
 		};
 		BD794EF826EAB49300C2342A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
