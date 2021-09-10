@@ -13,15 +13,19 @@ struct PhotoResponse: Decodable {
 
 struct Photo: Decodable {
     let largeImageURL: String
+    let imageSize: Int?
+    let type: String?
+    let tags: String?
     let user: String?
+    let views: Int?
+    let likes: Int?
+    let comments: Int?
+    let downloads: Int?
 }
 
 extension Photo {
     
     func getImage() -> UIImage? {
-        guard let imageURL = URL(string: largeImageURL) else {
-            return nil
-        }
         return UIImage.loadImageUsingCacheWithUrlString(largeImageURL)
     }
 }

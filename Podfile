@@ -8,5 +8,6 @@ target 'DialaTask' do
   # Pods for DialaTask
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'IQKeyboardManagerSwift'
 
 end

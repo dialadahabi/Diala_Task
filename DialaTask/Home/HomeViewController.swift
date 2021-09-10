@@ -19,6 +19,18 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         populateNews()
+        setupTableViewBinding()
+    }
+    
+    private func setupTableViewBinding() {
+        tableView.rx.itemSelected
+            .asDriver()
+            .drive(onNext:  { [weak self] indexPath in
+                let imageDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImageDetailViewController") as! ImageDetailViewController
+                imageDetailsVC.photo = self?.homeListVM?.homeVM[indexPath.row].photo
+                self?.present(imageDetailsVC, animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -66,10 +78,6 @@ class HomeViewController: UITableViewController {
             .disposed(by: disposeBag)
         
         return cell
-        
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     

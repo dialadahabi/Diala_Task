@@ -51,7 +51,8 @@ class LoginViewController: UIViewController {
         registerButton.rx.tap
             .asDriver()
             .drive(){ [weak self] _ in
-                self?.performSegue(withIdentifier: "goToRegister", sender: self)
+                let registerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+                self?.present(registerVC, animated: true, completion: nil)
             }
             .disposed(by: viewModel.disposeBag)
     }
@@ -60,7 +61,8 @@ class LoginViewController: UIViewController {
         switch userRepository.getUser(predicate: NSPredicate(format: "email = %d", argumentArray: [email])) {
         case .success(let fetchedUsers):
             if fetchedUsers.first?.password == viewModel.passwordSubject.value {
-                performSegue(withIdentifier: "goToHome", sender: self)
+                let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                present(homeVC, animated: true, completion: nil)
             } else {
                 loginErrorLabel.text = "Invalid email or password."
                 loginErrorLabel.isHidden = false
