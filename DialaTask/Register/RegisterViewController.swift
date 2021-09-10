@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import CoreData
+import RxSwift
+import RxCocoa
 
 class RegisterViewController: UIViewController {
     
@@ -13,21 +16,77 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
     
     @IBOutlet weak var emailErrorLabel: UILabel!
     @IBOutlet weak var ageErrorLabel: UILabel!
     @IBOutlet weak var passwordErrorLabel: UILabel!
-    @IBOutlet weak var confirmErrorLabel: UILabel!
+    
+    @IBOutlet weak var registerButton: UIButton!
+    
+    private let coreDataContextProvider = CoreDataContextProvider.shared
+    
+    private let disposeBag = DisposeBag()
+    
+    private let viewModel = RegisterViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        registerButton.setTitleColor(.gray, for: .disabled)
+        setupBindings()
     }
     
-    //Mark:- IBActions
+    func setupBindings() {
+        
+        ageTextField.rx.text
+            .compactMap({$0})
+            .bind(to: viewModel.ageSubject)
+            .disposed(by: disposeBag)
+        
+        emailTextField.rx.text
+            .compactMap({$0})
+            .bind(to: viewModel.emailSubject)
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx.text
+            .compactMap({$0})
+            .bind(to: viewModel.passwordSubject)
+            .disposed(by: disposeBag)
+                        
+        viewModel.isValidPassword
+            .asDriver(onErrorJustReturn: false)
+            .drive(onNext: { [weak self] value in
+                self?.passwordErrorLabel.text = "Password should be between 6 and 12 characters."
+                self?.passwordErrorLabel.isHidden = value
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isValidAge
+            .asDriver(onErrorJustReturn: false)
+            .drive(onNext: { [weak self] value in
+                self?.ageErrorLabel.text = "Age should be between 18 and 99 characters."
+                self?.ageErrorLabel.isHidden = value
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isValidEmail
+            .asDriver(onErrorJustReturn: false)
+            .drive(onNext: { [weak self] value in
+                self?.emailErrorLabel.text = "Invalid email."
+                self?.emailErrorLabel.isHidden = value
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isValidForm.bind(to: registerButton.rx.isEnabled).disposed(by: disposeBag)
 
-    @IBAction func registerButtonPressed(_ sender: UIButton) {
+        registerButton.rx.tap
+            .flatMap(viewModel.register)
+            .subscribe(onNext: { [weak self] user in
+                guard let self = self else {return}
+                let unitOfWork = UnitOfWork(context: self.coreDataContextProvider.newBackgroundContext())
+                unitOfWork.userRepository.create(user: user)
+                unitOfWork.saveChanges()
+            })
+            .disposed(by: disposeBag)
     }
     
 }
