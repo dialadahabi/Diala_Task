@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 struct PhotoResponse: Decodable {
     let hits: [Photo]
@@ -21,11 +23,4 @@ struct Photo: Decodable {
     let likes: Int?
     let comments: Int?
     let downloads: Int?
-}
-
-extension Photo {
-    
-    func getImage() -> UIImage? {
-        return UIImage.loadImageUsingCacheWithUrlString(largeImageURL)
-    }
 }

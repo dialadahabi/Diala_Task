@@ -32,14 +32,12 @@
 		BD794F4D26EB897300C2342A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F4C26EB897300C2342A /* HomeViewModel.swift */; };
 		BD794F5026EB89A300C2342A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F4F26EB89A300C2342A /* HomeTableViewCell.swift */; };
 		BD794F5226EB8B4A00C2342A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5126EB8B4A00C2342A /* Photo.swift */; };
-		BD794F5426EB910D00C2342A /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5326EB910D00C2342A /* UIImageView+Extensions.swift */; };
 		BD794F5726EB943C00C2342A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5626EB943C00C2342A /* Configuration.swift */; };
+		BD794F5926EBCD6400C2342A /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FD58F6F65E8283B11CA475A /* Pods-DialaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.release.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.release.xcconfig"; sourceTree = "<group>"; };
-		5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask-DialaTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		657B0AC9A995876FB5C0074D /* Pods_DialaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9327678FE5F89779D1C4F497 /* Pods_DialaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD794EC626EAB49000C2342A /* DialaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,12 +66,10 @@
 		BD794F4C26EB897300C2342A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BD794F4F26EB89A300C2342A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		BD794F5126EB8B4A00C2342A /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		BD794F5326EB910D00C2342A /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		BD794F5626EB943C00C2342A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
 		BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask_DialaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask-DialaTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +187,6 @@
 			children = (
 				BD794F2326EB4DAF00C2342A /* String+Extensions.swift */,
 				BD794F4A26EB887500C2342A /* URLRequest+Extensions.swift */,
-				BD794F5326EB910D00C2342A /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				BD794F5626EB943C00C2342A /* Configuration.swift */,
+				BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,10 +223,6 @@
 			children = (
 				BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */,
 				3FD58F6F65E8283B11CA475A /* Pods-DialaTask.release.xcconfig */,
-				FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */,
-				5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */,
-				F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */,
-				27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -362,9 +354,9 @@
 				BD794F1D26EB44D000C2342A /* UserMO.swift in Sources */,
 				BD794F4926EB547800C2342A /* SceneDelegate.swift in Sources */,
 				BD794F0426EABF1C00C2342A /* LoginViewModel.swift in Sources */,
+				BD794F5926EBCD6400C2342A /* Kingfisher+Rx.swift in Sources */,
 				BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */,
 				BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */,
-				BD794F5426EB910D00C2342A /* UIImageView+Extensions.swift in Sources */,
 				BD794F1326EB42E000C2342A /* CoreDataContextProvider.swift in Sources */,
 				BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */,
 				BD794F1626EB435E00C2342A /* Repository.swift in Sources */,

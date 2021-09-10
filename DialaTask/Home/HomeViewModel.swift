@@ -40,10 +40,6 @@ struct HomeViewModel {
 
 extension HomeViewModel {
     
-    var userPhoto: Observable<UIImage> {
-        return Observable<UIImage>.just(photo.getImage() ?? UIImage())
-    }
-    
     var user: Observable<String> {
         return Observable<String>.just(photo.user ?? "")
     }

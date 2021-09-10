@@ -11,5 +11,11 @@ class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var username: UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photo.image = nil
+        username.text = nil
+    }
 
 }

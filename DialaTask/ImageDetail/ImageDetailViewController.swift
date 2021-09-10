@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ImageDetailViewController: UIViewController {
     
@@ -23,13 +25,22 @@ class ImageDetailViewController: UIViewController {
     @IBOutlet weak var amountOfComments: UILabel!
     @IBOutlet weak var amountOfDownloads: UILabel!
     
+    let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
     private func setupUI() {
-        photoImageView.image = photo?.getImage()
+        
+        retrieveOrDonwloadImage(key: photo?.largeImageURL ?? "", url: photo?.largeImageURL ?? "")
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] image in
+                self?.photoImageView.image = image
+            })
+            .disposed(by: disposeBag)
+       
         imageSize.text = "Size: \(photo?.imageSize ?? 0)"
         imageTags.text = "Tags: \(photo?.tags ?? "")"
         imageType.text = "Type: \(photo?.type ?? "")"
