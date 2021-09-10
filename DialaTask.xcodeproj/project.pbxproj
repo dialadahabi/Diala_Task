@@ -7,37 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3310D0FB2ED86845447E3B54 /* Pods_DialaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327678FE5F89779D1C4F497 /* Pods_DialaTaskTests.framework */; };
 		3B4B6878938CC8EB0CE51FA7 /* Pods_DialaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657B0AC9A995876FB5C0074D /* Pods_DialaTask.framework */; };
 		BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EC926EAB49000C2342A /* AppDelegate.swift */; };
 		BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794ECD26EAB49000C2342A /* LoginViewController.swift */; };
 		BD794ED126EAB49000C2342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD794ECF26EAB49000C2342A /* Main.storyboard */; };
 		BD794ED326EAB49300C2342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD794ED226EAB49300C2342A /* Assets.xcassets */; };
 		BD794ED626EAB49300C2342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD794ED426EAB49300C2342A /* LaunchScreen.storyboard */; };
-		BD794EE126EAB49300C2342A /* DialaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EE026EAB49300C2342A /* DialaTaskTests.swift */; };
-		BD794EEC26EAB49300C2342A /* DialaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EEB26EAB49300C2342A /* DialaTaskUITests.swift */; };
 		BD794EFA26EAB9F200C2342A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EF926EAB9F200C2342A /* RegisterViewController.swift */; };
 		BD794EFC26EABBED00C2342A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EFB26EABBED00C2342A /* HomeViewController.swift */; };
 		BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */; };
-		DCE629BAC31CE761D670A8A3 /* Pods_DialaTask_DialaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */; };
+		BD794F0426EABF1C00C2342A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F0326EABF1C00C2342A /* LoginViewModel.swift */; };
+		BD794F0626EABF4B00C2342A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F0526EABF4B00C2342A /* User.swift */; };
+		BD794F0926EB417400C2342A /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD794F0726EB417400C2342A /* User.xcdatamodeld */; };
+		BD794F1326EB42E000C2342A /* CoreDataContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1226EB42E000C2342A /* CoreDataContextProvider.swift */; };
+		BD794F1626EB435E00C2342A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1526EB435E00C2342A /* Repository.swift */; };
+		BD794F1826EB43B800C2342A /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1726EB43B800C2342A /* CoreDataRepository.swift */; };
+		BD794F1A26EB440000C2342A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1926EB440000C2342A /* UserRepository.swift */; };
+		BD794F1D26EB44D000C2342A /* UserMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1C26EB44D000C2342A /* UserMO.swift */; };
+		BD794F1F26EB46DF00C2342A /* UnitOfWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F1E26EB46DF00C2342A /* UnitOfWork.swift */; };
+		BD794F2126EB4D4500C2342A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F2026EB4D4500C2342A /* RegisterViewModel.swift */; };
+		BD794F2426EB4DAF00C2342A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F2326EB4DAF00C2342A /* StringExtension.swift */; };
+		BD794F4926EB547800C2342A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F4826EB547800C2342A /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BD794EDD26EAB49300C2342A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD794EBE26EAB49000C2342A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BD794EC526EAB49000C2342A;
-			remoteInfo = DialaTask;
-		};
-		BD794EE826EAB49300C2342A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD794EBE26EAB49000C2342A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BD794EC526EAB49000C2342A;
-			remoteInfo = DialaTask;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,15 +43,21 @@
 		BD794ED226EAB49300C2342A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD794ED526EAB49300C2342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD794ED726EAB49300C2342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD794EDC26EAB49300C2342A /* DialaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD794EE026EAB49300C2342A /* DialaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialaTaskTests.swift; sourceTree = "<group>"; };
-		BD794EE226EAB49300C2342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD794EE726EAB49300C2342A /* DialaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD794EEB26EAB49300C2342A /* DialaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialaTaskUITests.swift; sourceTree = "<group>"; };
-		BD794EED26EAB49300C2342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD794EF926EAB9F200C2342A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BD794EFB26EABBED00C2342A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		BD794F0326EABF1C00C2342A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BD794F0526EABF4B00C2342A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD794F0826EB417400C2342A /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		BD794F1226EB42E000C2342A /* CoreDataContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContextProvider.swift; sourceTree = "<group>"; };
+		BD794F1526EB435E00C2342A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BD794F1726EB43B800C2342A /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		BD794F1926EB440000C2342A /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		BD794F1C26EB44D000C2342A /* UserMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMO.swift; sourceTree = "<group>"; };
+		BD794F1E26EB46DF00C2342A /* UnitOfWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfWork.swift; sourceTree = "<group>"; };
+		BD794F2026EB4D4500C2342A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		BD794F2326EB4DAF00C2342A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BD794F4826EB547800C2342A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask_DialaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DialaTaskTests/Pods-DialaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,22 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD794ED926EAB49300C2342A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3310D0FB2ED86845447E3B54 /* Pods_DialaTaskTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD794EE426EAB49300C2342A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCE629BAC31CE761D670A8A3 /* Pods_DialaTask_DialaTaskUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				BD794EC826EAB49000C2342A /* DialaTask */,
-				BD794EDF26EAB49300C2342A /* DialaTaskTests */,
-				BD794EEA26EAB49300C2342A /* DialaTaskUITests */,
 				BD794EC726EAB49000C2342A /* Products */,
 				FD5740C592F0353486D08B0D /* Pods */,
 				D91D5449226F95CEEAFD1CE5 /* Frameworks */,
@@ -111,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				BD794EC626EAB49000C2342A /* DialaTask.app */,
-				BD794EDC26EAB49300C2342A /* DialaTaskTests.xctest */,
-				BD794EE726EAB49300C2342A /* DialaTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,34 +98,21 @@
 			isa = PBXGroup;
 			children = (
 				BD794EC926EAB49000C2342A /* AppDelegate.swift */,
+				BD794F4826EB547800C2342A /* SceneDelegate.swift */,
 				BD794F0126EABD4000C2342A /* Login */,
 				BD794F0026EABD3500C2342A /* Register */,
 				BD794F0226EABD4700C2342A /* Home */,
 				BD794EFF26EABD2B00C2342A /* ImageDetail */,
+				BD794F1B26EB44C200C2342A /* Models */,
+				BD794F2226EB4DA000C2342A /* Extensions */,
+				BD794F1426EB434B00C2342A /* CoreData */,
 				BD794ECF26EAB49000C2342A /* Main.storyboard */,
 				BD794ED226EAB49300C2342A /* Assets.xcassets */,
 				BD794ED426EAB49300C2342A /* LaunchScreen.storyboard */,
 				BD794ED726EAB49300C2342A /* Info.plist */,
+				BD794F0726EB417400C2342A /* User.xcdatamodeld */,
 			);
 			path = DialaTask;
-			sourceTree = "<group>";
-		};
-		BD794EDF26EAB49300C2342A /* DialaTaskTests */ = {
-			isa = PBXGroup;
-			children = (
-				BD794EE026EAB49300C2342A /* DialaTaskTests.swift */,
-				BD794EE226EAB49300C2342A /* Info.plist */,
-			);
-			path = DialaTaskTests;
-			sourceTree = "<group>";
-		};
-		BD794EEA26EAB49300C2342A /* DialaTaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BD794EEB26EAB49300C2342A /* DialaTaskUITests.swift */,
-				BD794EED26EAB49300C2342A /* Info.plist */,
-			);
-			path = DialaTaskUITests;
 			sourceTree = "<group>";
 		};
 		BD794EFF26EABD2B00C2342A /* ImageDetail */ = {
@@ -163,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BD794EF926EAB9F200C2342A /* RegisterViewController.swift */,
+				BD794F2026EB4D4500C2342A /* RegisterViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -171,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BD794ECD26EAB49000C2342A /* LoginViewController.swift */,
+				BD794F0326EABF1C00C2342A /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -181,6 +147,35 @@
 				BD794EFB26EABBED00C2342A /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BD794F1426EB434B00C2342A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BD794F1226EB42E000C2342A /* CoreDataContextProvider.swift */,
+				BD794F1526EB435E00C2342A /* Repository.swift */,
+				BD794F1726EB43B800C2342A /* CoreDataRepository.swift */,
+				BD794F1926EB440000C2342A /* UserRepository.swift */,
+				BD794F1E26EB46DF00C2342A /* UnitOfWork.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BD794F1B26EB44C200C2342A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD794F0526EABF4B00C2342A /* User.swift */,
+				BD794F1C26EB44D000C2342A /* UserMO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD794F2226EB4DA000C2342A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD794F2326EB4DAF00C2342A /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D91D5449226F95CEEAFD1CE5 /* Frameworks */ = {
@@ -228,45 +223,6 @@
 			productReference = BD794EC626EAB49000C2342A /* DialaTask.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BD794EDB26EAB49300C2342A /* DialaTaskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD794EF326EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskTests" */;
-			buildPhases = (
-				A671C86607E1B25F4016B433 /* [CP] Check Pods Manifest.lock */,
-				BD794ED826EAB49300C2342A /* Sources */,
-				BD794ED926EAB49300C2342A /* Frameworks */,
-				BD794EDA26EAB49300C2342A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD794EDE26EAB49300C2342A /* PBXTargetDependency */,
-			);
-			name = DialaTaskTests;
-			productName = DialaTaskTests;
-			productReference = BD794EDC26EAB49300C2342A /* DialaTaskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BD794EE626EAB49300C2342A /* DialaTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD794EF626EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskUITests" */;
-			buildPhases = (
-				40580474F69ABDE3B4E65D7D /* [CP] Check Pods Manifest.lock */,
-				BD794EE326EAB49300C2342A /* Sources */,
-				BD794EE426EAB49300C2342A /* Frameworks */,
-				BD794EE526EAB49300C2342A /* Resources */,
-				A8B2E0F8619285E69838384A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD794EE926EAB49300C2342A /* PBXTargetDependency */,
-			);
-			name = DialaTaskUITests;
-			productName = DialaTaskUITests;
-			productReference = BD794EE726EAB49300C2342A /* DialaTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,14 +234,6 @@
 				TargetAttributes = {
 					BD794EC526EAB49000C2342A = {
 						CreatedOnToolsVersion = 12.5.1;
-					};
-					BD794EDB26EAB49300C2342A = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = BD794EC526EAB49000C2342A;
-					};
-					BD794EE626EAB49300C2342A = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = BD794EC526EAB49000C2342A;
 					};
 				};
 			};
@@ -303,8 +251,6 @@
 			projectRoot = "";
 			targets = (
 				BD794EC526EAB49000C2342A /* DialaTask */,
-				BD794EDB26EAB49300C2342A /* DialaTaskTests */,
-				BD794EE626EAB49300C2342A /* DialaTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,45 +266,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD794EDA26EAB49300C2342A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD794EE526EAB49300C2342A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40580474F69ABDE3B4E65D7D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DialaTask-DialaTaskUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5173DDFBA40F75D1F9ADAD6F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,45 +308,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A671C86607E1B25F4016B433 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DialaTaskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8B2E0F8619285E69838384A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DialaTask-DialaTaskUITests/Pods-DialaTask-DialaTaskUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -444,44 +315,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD794F0926EB417400C2342A /* User.xcdatamodeld in Sources */,
+				BD794F2126EB4D4500C2342A /* RegisterViewModel.swift in Sources */,
+				BD794F1F26EB46DF00C2342A /* UnitOfWork.swift in Sources */,
 				BD794EFC26EABBED00C2342A /* HomeViewController.swift in Sources */,
+				BD794F2426EB4DAF00C2342A /* StringExtension.swift in Sources */,
+				BD794F1A26EB440000C2342A /* UserRepository.swift in Sources */,
+				BD794F1D26EB44D000C2342A /* UserMO.swift in Sources */,
+				BD794F4926EB547800C2342A /* SceneDelegate.swift in Sources */,
+				BD794F0426EABF1C00C2342A /* LoginViewModel.swift in Sources */,
 				BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */,
 				BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */,
+				BD794F1326EB42E000C2342A /* CoreDataContextProvider.swift in Sources */,
 				BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */,
+				BD794F1626EB435E00C2342A /* Repository.swift in Sources */,
+				BD794F1826EB43B800C2342A /* CoreDataRepository.swift in Sources */,
 				BD794EFA26EAB9F200C2342A /* RegisterViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD794ED826EAB49300C2342A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD794EE126EAB49300C2342A /* DialaTaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD794EE326EAB49300C2342A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD794EEC26EAB49300C2342A /* DialaTaskUITests.swift in Sources */,
+				BD794F0626EABF4B00C2342A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BD794EDE26EAB49300C2342A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BD794EC526EAB49000C2342A /* DialaTask */;
-			targetProxy = BD794EDD26EAB49300C2342A /* PBXContainerItemProxy */;
-		};
-		BD794EE926EAB49300C2342A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BD794EC526EAB49000C2342A /* DialaTask */;
-			targetProxy = BD794EE826EAB49300C2342A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD794ECF26EAB49000C2342A /* Main.storyboard */ = {
@@ -657,90 +511,6 @@
 			};
 			name = Release;
 		};
-		BD794EF426EAB49300C2342A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FA1C6275F689FF4D776D92 /* Pods-DialaTaskTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DialaTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diala.DialaTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DialaTask.app/DialaTask";
-			};
-			name = Debug;
-		};
-		BD794EF526EAB49300C2342A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27F26D34451009173B00368A /* Pods-DialaTaskTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DialaTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diala.DialaTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DialaTask.app/DialaTask";
-			};
-			name = Release;
-		};
-		BD794EF726EAB49300C2342A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA1C88CD7D29CF143E3EBD29 /* Pods-DialaTask-DialaTaskUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DialaTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diala.DialaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DialaTask;
-			};
-			name = Debug;
-		};
-		BD794EF826EAB49300C2342A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5874D2C8063D5E08DABEAD58 /* Pods-DialaTask-DialaTaskUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DialaTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diala.DialaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DialaTask;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,25 +532,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD794EF326EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BD794EF426EAB49300C2342A /* Debug */,
-				BD794EF526EAB49300C2342A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD794EF626EAB49300C2342A /* Build configuration list for PBXNativeTarget "DialaTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BD794EF726EAB49300C2342A /* Debug */,
-				BD794EF826EAB49300C2342A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD794F0726EB417400C2342A /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD794F0826EB417400C2342A /* User.xcdatamodel */,
+			);
+			currentVersion = BD794F0826EB417400C2342A /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD794EBE26EAB49000C2342A /* Project object */;
 }
