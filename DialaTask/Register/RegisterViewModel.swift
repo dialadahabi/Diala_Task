@@ -45,8 +45,8 @@ class RegisterViewModel {
     func register() -> Observable<User> {
       return Observable.combineLatest(emailSubject, passwordSubject, ageSubject)
         .take(1)
-        .flatMap { (_, _, _) -> Observable<User> in
-            Observable.just(User(email: self.emailSubject.value, password: self.passwordSubject.value, age: self.ageSubject.value))
+        .flatMap { [weak self](_, _, _) -> Observable<User> in
+            Observable.just(User(email: self?.emailSubject.value, password: self?.passwordSubject.value, age: self?.ageSubject.value))
         }
     }
     

@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CoreData
 
 class LoginViewController: UIViewController {
     
@@ -16,22 +17,57 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var emailErrorLabel: UILabel!
-    @IBOutlet weak var passwordErrorLabel: UILabel!
-
+    @IBOutlet weak var loginErrorLabel: UILabel!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
+    let disposeBag = DisposeBag()
+    
+    private let viewModel = LoginViewModel()
+    
+    private let userRepository = UserRepository(context: CoreDataContextProvider.shared.newBackgroundContext())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.setTitleColor(.gray, for: .disabled)
+        setupBindings()
+    }
+    
+    func setupBindings() {
+        emailTextField.rx.text.bind(to: viewModel.emailSubject).disposed(by: disposeBag)
+        passwordTextField.rx.text.bind(to: viewModel.passwordSubject).disposed(by: disposeBag)
         
+        viewModel.isValidForm.bind(to: loginButton.rx.isEnabled).disposed(by: disposeBag)
+        
+        loginButton.rx.tap
+            .flatMap(viewModel.login)
+            .subscribe(onNext: { [weak self] user in
+                guard let email = user.email else {return}
+                self?.get(email: email)
+            })
+            .disposed(by: viewModel.disposeBag)
+        
+        registerButton.rx.tap
+            .asDriver()
+            .drive(){ [weak self] _ in
+                self?.performSegue(withIdentifier: "goToRegister", sender: self)
+            }
+            .disposed(by: viewModel.disposeBag)
     }
     
-    //Mark:- IBActions
-    
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    func get(email: String) {
+        switch userRepository.getUser(predicate: NSPredicate(format: "email = %d", argumentArray: [email])) {
+        case .success(let fetchedUsers):
+            if fetchedUsers.first?.password == viewModel.passwordSubject.value {
+                performSegue(withIdentifier: "goToHome", sender: self)
+            } else {
+                loginErrorLabel.text = "Invalid email or password."
+                loginErrorLabel.isHidden = false
+            }
+        case .failure: break
+        }
     }
-    
-    @IBAction func registerButtonPressed(_ sender: UIButton) {
-    }
-    
 
 }
 
