@@ -1,6 +1,0 @@
-framework module Pods_DialaTaskTests {
-  umbrella header "Pods-DialaTaskTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

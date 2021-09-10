@@ -34,7 +34,7 @@ class ImageDetailViewController: UIViewController {
     
     private func setupUI() {
         
-        retrieveOrDonwloadImage(key: photo?.largeImageURL ?? "", url: photo?.largeImageURL ?? "")
+        retrieveOrDownloadImage(key: photo?.largeImageURL ?? "", url: photo?.largeImageURL ?? "")
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] image in
                 self?.photoImageView.image = image

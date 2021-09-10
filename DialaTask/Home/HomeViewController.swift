@@ -69,7 +69,7 @@ class HomeViewController: UITableViewController {
         
         let homeVM = self.homeListVM?.photoAt(indexPath.row)
         
-        retrieveOrDonwloadImage(key: homeVM?.photo.largeImageURL ?? "", url: homeVM?.photo.largeImageURL ?? "")
+        retrieveOrDownloadImage(key: homeVM?.photo.largeImageURL ?? "", url: homeVM?.photo.largeImageURL ?? "")
             .observe(on: MainScheduler.asyncInstance)
             .asDriver(onErrorJustReturn: UIImage())
             .drive(cell.photo.rx.image)

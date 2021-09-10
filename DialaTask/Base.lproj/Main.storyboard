@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avp-Zv-5OB">
-                                <rect key="frame" x="178.5" y="184.5" width="57.5" height="29"/>
+                                <rect key="frame" x="178.5" y="164.5" width="57.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HUj-wY-xPL">
-                                <rect key="frame" x="60" y="618" width="294" height="66.5"/>
+                                <rect key="frame" x="60" y="608" width="294" height="76.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New user?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-Ia-hc3">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="21.5"/>
@@ -32,10 +32,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-Od-Q4r">
-                                        <rect key="frame" x="0.0" y="26.5" width="294" height="40"/>
+                                        <rect key="frame" x="0.0" y="26.5" width="294" height="50"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Dez-Kk-SXP"/>
+                                            <constraint firstAttribute="height" constant="50" id="Dez-Kk-SXP"/>
                                         </constraints>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,7 +44,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="S22-55-b9v">
-                                <rect key="frame" x="60" y="287.5" width="294" height="293"/>
+                                <rect key="frame" x="60" y="267.5" width="294" height="303"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Uf-t1-p2E">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="205"/>
@@ -95,10 +95,10 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hce-P8-aa5">
-                                        <rect key="frame" x="0.0" y="253" width="294" height="40"/>
+                                        <rect key="frame" x="0.0" y="253" width="294" height="50"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2NG-bR-Wod"/>
+                                            <constraint firstAttribute="height" constant="50" id="2NG-bR-Wod"/>
                                         </constraints>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="r13-r6-M42">
-                                <rect key="frame" x="60" y="176.5" width="294" height="543.5"/>
+                                <rect key="frame" x="60" y="171.5" width="294" height="553.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-9p-lYU">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="29"/>
@@ -151,7 +151,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="BVd-VB-PEq">
-                                        <rect key="frame" x="0.0" y="71" width="294" height="472.5"/>
+                                        <rect key="frame" x="0.0" y="71" width="294" height="482.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-DC-XXR">
                                                 <rect key="frame" x="0.0" y="0.0" width="294" height="391.5"/>
@@ -225,10 +225,10 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hP-wEz">
-                                                <rect key="frame" x="0.0" y="432.5" width="294" height="40"/>
+                                                <rect key="frame" x="0.0" y="432.5" width="294" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="5m1-hh-Qph"/>
+                                                    <constraint firstAttribute="height" constant="50" id="5m1-hh-Qph"/>
                                                 </constraints>
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
