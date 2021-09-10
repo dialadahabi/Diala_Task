@@ -10,9 +10,9 @@ import RxSwift
 
 class RegisterViewModel {
     
-    let ageSubject = PublishSubject<String>()
-    let emailSubject = PublishSubject<String>()
-    let passwordSubject = PublishSubject<String>()
+    let ageSubject = BehaviorRelay<String>(value: "")
+    let emailSubject = BehaviorRelay<String>(value: "")
+    let passwordSubject = BehaviorRelay<String>(value: "")
     let disposeBag = DisposeBag()
     let minPasswordCharacters = 6
     let maxPasswordCharacters = 12
@@ -43,9 +43,11 @@ class RegisterViewModel {
     }()
     
     func register() -> Observable<User> {
-        return Observable.combineLatest(ageSubject.asObservable(), emailSubject.asObservable(), passwordSubject.asObservable()).map { age, email, password in
-            return User(email: email, password: password, age: age)
-        }
+        return Observable.combineLatest(emailSubject, passwordSubject, ageSubject)
+            .take(1)
+            .flatMap { [weak self](_, _, _) -> Observable<User> in
+                Observable.just(User(email: self?.emailSubject.value, password: self?.passwordSubject.value, age: self?.ageSubject.value))
+            }
     }
     
 }

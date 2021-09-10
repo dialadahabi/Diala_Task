@@ -44,4 +44,21 @@ class CoreDataRepository<T: NSManagedObject>: Repository {
         return .success(managedObject)
     }
     
+    func userAlreadyExists(predicate: NSPredicate) -> Bool {
+        let fetchRequest = Entity.fetchRequest()
+        fetchRequest.predicate = predicate
+        fetchRequest.includesSubentities = false
+
+        var entitiesCount = 0
+
+        do {
+            entitiesCount = try managedObjectContext.count(for: fetchRequest)
+        }
+        catch {
+            print("error executing fetch request: \(error)")
+        }
+
+        return entitiesCount > 0
+    }
+    
 }

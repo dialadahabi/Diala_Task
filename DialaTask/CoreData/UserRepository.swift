@@ -10,6 +10,7 @@ import CoreData
 protocol UserRepositoryInterface {
     func getUser(predicate: NSPredicate?) -> Result<[User], Error>
     func create(user: User) -> Result<Bool, Error>
+    func userAlreadyExists(user: User) -> Bool
 }
 
 
@@ -52,5 +53,9 @@ extension UserRepository: UserRepositoryInterface {
         }
     }
 
+    func userAlreadyExists(user: User) -> Bool {
+        let predicate = NSPredicate(format: "email = %d", argumentArray: [user.email ?? ""])
+        return repository.userAlreadyExists(predicate: predicate)
+    }
     
 }

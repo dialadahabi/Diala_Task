@@ -83,8 +83,16 @@ class RegisterViewController: UIViewController {
             .subscribe(onNext: { [weak self] user in
                 guard let self = self else {return}
                 let unitOfWork = UnitOfWork(context: self.coreDataContextProvider.newBackgroundContext())
+                if unitOfWork.userRepository.userAlreadyExists(user: user) {
+                    let alert = UIAlertController(title: "Error", message: "User already exists!", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
                 unitOfWork.userRepository.create(user: user)
                 unitOfWork.saveChanges()
+                let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                self.present(homeVC, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
     }
