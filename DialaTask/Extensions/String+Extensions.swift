@@ -1,5 +1,5 @@
 //
-//  StringExtension.swift
+//  String+Extensions.swift
 //  DialaTask
 //
 //  Created by Diala Aldahabi on 10/09/2021.

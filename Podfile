@@ -9,13 +9,4 @@ target 'DialaTask' do
 pod 'RxSwift'
 pod 'RxCocoa'
 
-  target 'DialaTaskTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'DialaTaskUITests' do
-    # Pods for testing
-  end
-
 end
