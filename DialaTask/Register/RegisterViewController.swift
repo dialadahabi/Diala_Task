@@ -53,6 +53,9 @@ class RegisterViewController: UIViewController {
             .disposed(by: disposeBag)
                         
         viewModel.isValidPassword
+            .skip(while: { [weak self] _ in
+                self?.passwordTextField.text?.isEmpty ?? false
+            })
             .asDriver(onErrorJustReturn: false)
             .drive(onNext: { [weak self] value in
                 self?.passwordErrorLabel.text = "Password should be between 6 and 12 characters."
@@ -61,6 +64,9 @@ class RegisterViewController: UIViewController {
             .disposed(by: disposeBag)
         
         viewModel.isValidAge
+            .skip(while: { [weak self] _ in
+                self?.ageTextField.text?.isEmpty ?? false
+            })
             .asDriver(onErrorJustReturn: false)
             .drive(onNext: { [weak self] value in
                 self?.ageErrorLabel.text = "Age should be between 18 and 99 characters."
@@ -69,6 +75,9 @@ class RegisterViewController: UIViewController {
             .disposed(by: disposeBag)
         
         viewModel.isValidEmail
+            .skip(while: { [weak self] _ in
+                self?.emailTextField.text?.isEmpty ?? false
+            })
             .asDriver(onErrorJustReturn: false)
             .drive(onNext: { [weak self] value in
                 self?.emailErrorLabel.text = "Invalid email."
