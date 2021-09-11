@@ -34,6 +34,7 @@
 		BD794F5226EB8B4A00C2342A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5126EB8B4A00C2342A /* Photo.swift */; };
 		BD794F5726EB943C00C2342A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5626EB943C00C2342A /* Configuration.swift */; };
 		BD794F5926EBCD6400C2342A /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */; };
+		BD794F5B26ECBB8800C2342A /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD794F5A26ECBB8800C2342A /* ImageDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		BD794F5126EB8B4A00C2342A /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		BD794F5626EB943C00C2342A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
+		BD794F5A26ECBB8800C2342A /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
 		BF1AC42C77A5EBC8BE854A3C /* Pods-DialaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialaTask.debug.xcconfig"; path = "Target Support Files/Pods-DialaTask/Pods-DialaTask.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA835DEFB3D0AB9DC4CDC37 /* Pods_DialaTask_DialaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialaTask_DialaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BD794EFD26EABC3300C2342A /* ImageDetailViewController.swift */,
+				BD794F5A26ECBB8800C2342A /* ImageDetailViewModel.swift */,
 			);
 			path = ImageDetail;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				BD794F0426EABF1C00C2342A /* LoginViewModel.swift in Sources */,
 				BD794F5926EBCD6400C2342A /* Kingfisher+Rx.swift in Sources */,
 				BD794EFE26EABC3300C2342A /* ImageDetailViewController.swift in Sources */,
+				BD794F5B26ECBB8800C2342A /* ImageDetailViewModel.swift in Sources */,
 				BD794ECE26EAB49000C2342A /* LoginViewController.swift in Sources */,
 				BD794F1326EB42E000C2342A /* CoreDataContextProvider.swift in Sources */,
 				BD794ECA26EAB49000C2342A /* AppDelegate.swift in Sources */,

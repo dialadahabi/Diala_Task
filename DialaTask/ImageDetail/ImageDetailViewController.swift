@@ -10,9 +10,7 @@ import RxSwift
 import RxCocoa
 
 class ImageDetailViewController: UIViewController {
-    
-    var photo: Photo?
-    
+        
     @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var imageSize: UILabel!
@@ -25,6 +23,8 @@ class ImageDetailViewController: UIViewController {
     @IBOutlet weak var amountOfComments: UILabel!
     @IBOutlet weak var amountOfDownloads: UILabel!
     
+    var viewModel: ImageDetailViewModel?
+    
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -34,21 +34,21 @@ class ImageDetailViewController: UIViewController {
     
     private func setupUI() {
         
-        retrieveOrDownloadImage(key: photo?.largeImageURL ?? "", url: photo?.largeImageURL ?? "")
+        retrieveOrDownloadImage(key: viewModel?.photo.largeImageURL ?? "", url: viewModel?.photo.largeImageURL ?? "")
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] image in
                 self?.photoImageView.image = image
             })
             .disposed(by: disposeBag)
        
-        imageSize.text = "Size: \(photo?.imageSize ?? 0)"
-        imageTags.text = "Tags: \(photo?.tags ?? "")"
-        imageType.text = "Type: \(photo?.type ?? "")"
-        userName.text = "User: \(photo?.user ?? "")"
-        amountOfViews.text = "\(photo?.views ?? 0) Views"
-        amountOfLikes.text = "\(photo?.likes ?? 0) Likes"
-        amountOfComments.text = "\(photo?.comments ?? 0) Comments"
-        amountOfDownloads.text = "\(photo?.downloads ?? 0) Downloads"
+        imageSize.text = "Size: \(viewModel?.photo.imageSize ?? 0)"
+        imageTags.text = "Tags: \(viewModel?.photo.tags ?? "")"
+        imageType.text = "Type: \(viewModel?.photo.type ?? "")"
+        userName.text = "User: \(viewModel?.photo.user ?? "")"
+        amountOfViews.text = "\(viewModel?.photo.views ?? 0) Views"
+        amountOfLikes.text = "\(viewModel?.photo.likes ?? 0) Likes"
+        amountOfComments.text = "\(viewModel?.photo.comments ?? 0) Comments"
+        amountOfDownloads.text = "\(viewModel?.photo.downloads ?? 0) Downloads"
     }
     
 }

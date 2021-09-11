@@ -26,8 +26,9 @@ class HomeViewController: UITableViewController {
         tableView.rx.itemSelected
             .asDriver()
             .drive(onNext:  { [weak self] indexPath in
+                guard let selectedPhoto = self?.homeListVM?.homeVM[indexPath.row].photo else {return}
                 let imageDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImageDetailViewController") as! ImageDetailViewController
-                imageDetailsVC.photo = self?.homeListVM?.homeVM[indexPath.row].photo
+                imageDetailsVC.viewModel = ImageDetailViewModel(photo: selectedPhoto)
                 self?.present(imageDetailsVC, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
