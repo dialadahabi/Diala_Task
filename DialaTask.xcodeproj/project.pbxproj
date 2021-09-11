@@ -109,10 +109,7 @@
 			children = (
 				BD794EC926EAB49000C2342A /* AppDelegate.swift */,
 				BD794F4826EB547800C2342A /* SceneDelegate.swift */,
-				BD794F0126EABD4000C2342A /* Login */,
-				BD794F0026EABD3500C2342A /* Register */,
-				BD794F0226EABD4700C2342A /* Home */,
-				BD794EFF26EABD2B00C2342A /* ImageDetail */,
+				BD794F5C26ED019A00C2342A /* Scenes */,
 				BD794F1B26EB44C200C2342A /* Models */,
 				BD794F5526EB942300C2342A /* Helpers */,
 				BD794F2226EB4DA000C2342A /* Extensions */,
@@ -159,7 +156,6 @@
 				BD794F4E26EB899500C2342A /* Cells */,
 				BD794EFB26EABBED00C2342A /* HomeViewController.swift */,
 				BD794F4C26EB897300C2342A /* HomeViewModel.swift */,
-				BD794F5126EB8B4A00C2342A /* Photo.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +175,7 @@
 		BD794F1B26EB44C200C2342A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BD794F5126EB8B4A00C2342A /* Photo.swift */,
 				BD794F0526EABF4B00C2342A /* User.swift */,
 				BD794F1C26EB44D000C2342A /* UserMO.swift */,
 			);
@@ -209,6 +206,17 @@
 				BD794F5826EBCD6400C2342A /* Kingfisher+Rx.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BD794F5C26ED019A00C2342A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BD794F0126EABD4000C2342A /* Login */,
+				BD794F0026EABD3500C2342A /* Register */,
+				BD794F0226EABD4700C2342A /* Home */,
+				BD794EFF26EABD2B00C2342A /* ImageDetail */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		D91D5449226F95CEEAFD1CE5 /* Frameworks */ = {
